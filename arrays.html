@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays and array functions</h1>
+
+    <script>
+        array = [1,'som','five',23.5];
+
+        console.log(array[2]);
+
+        console.log(array);
+
+        array.pop();
+
+        console.log(array);
+
+        array.push('somali');
+
+        console.log(array);
+
+        array.shift();
+
+        console.log(array);
+
+        array.unshift('Horay');
+
+        console.log(array);
+
+        //delete a fixed position
+        let a = array.indexOf('somali');
+
+        console.log(a);
+        
+        array.splice(a,1);
+
+        console.log(array);
+
+
+    </script>
+</body>
+</html>
