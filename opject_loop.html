@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in loops</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            names: ['jabra', 'Faarah', 'suldaan'],
+            class: 'BCS13-A',
+            work: function(){
+                for(let i in this.names){
+                    console.log(i);
+                }
+            },
+            work1: function(){
+                this.names.forEach(function(element){
+                    console.log(element);
+                });
+            }
+
+        }
+        console.log(obj.names[1]);
+        obj.work();
+        obj.work1();
+        
+        let work3  = () =>{
+            // obj.names.forEach(function(j){
+            //     console.log(j);
+            // });
+            for(let i in obj.names){
+                console.log(i);
+            }
+        }
+        
+        work3();
+
+        // let namess = ['aaaa',12];
+        // for(let i of namess){
+        //     console.log(i);
+        // }
+        // console.log(1);
+    </script>
+</body>
+</html>
