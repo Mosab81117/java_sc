@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make css changes in js</title>
+    <style>
+        .error{
+            background-color: red;
+            color: white;
+            padding: 6px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .sucess{
+            background-color: rgb(57, 219, 68);
+            color: rgb(37, 40, 81);
+            padding: 6px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae provident dolores distinctio ut natus voluptate?
+        </p>
+    </div>
+    <script>
+        let divka = document.querySelector("div");
+
+        divka.classList.add("error");
+        divka.classList.remove("error");
+     
+        divka.classList.add("sucess");
+
+        let p = document.querySelector("p");
+
+        p.style.fontSize = "40px";
+
+        divka.style.border = "5px solid rgb(37, 40, 81)";
+
+    </script>
+</body>
+</html>
